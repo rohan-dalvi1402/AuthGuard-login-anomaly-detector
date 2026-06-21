@@ -1,6 +1,6 @@
 # AuthGuard – Login Attack Detection Service
 
-AuthGuard is a lightweight backend service designed to detect and respond to suspicious login activity such as brute-force attacks and credential stuffing. It uses time-windowed tracking and IP-based analysis to identify abnormal behavior in authentication flows.
+AuthGuard is a lightweight backend service built with Flask, designed to detect and respond to suspicious login activity such as brute-force attacks and credential stuffing. It uses time-windowed tracking and IP-based analysis to identify abnormal behavior in authentication flows.
 
 This project is intended as a practical demonstration of detection engineering concepts and secure application design.
 
