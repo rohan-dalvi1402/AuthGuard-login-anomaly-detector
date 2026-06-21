@@ -98,9 +98,3 @@ After repeated failed login attempts exceeding the configured threshold, the ser
   "alert": "Brute-force detected"
 }
 ```
-
-
-### Installation
-
-```bash
-pip install -r requirements.txt
