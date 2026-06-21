@@ -53,6 +53,53 @@ This approach mimics basic rate-limiting and behavioral detection strategies use
 - Python 3.8+
 - pip
 
+## Running the Application
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the application:
+
+```bash
+python app.py
+```
+
+The API will be available at:
+
+```text
+http://127.0.0.1:5000
+```
+
+## Example Request
+
+Send a login request using cURL:
+
+```bash
+curl -X POST http://127.0.0.1:5000/login \
+-H "Content-Type: application/json" \
+-d '{"username":"admin","password":"incorrect"}'
+```
+
+### Example Response
+
+```json
+{
+  "success": false
+}
+```
+
+After repeated failed login attempts exceeding the configured threshold, the service will return:
+
+```json
+{
+  "alert": "Brute-force detected"
+}
+```
+
+
 ### Installation
 
 ```bash
