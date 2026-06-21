@@ -1,4 +1,4 @@
-# AuthGuard – Login Attack Detection Service
+# AuthGuard – Intelligent Login Attack Detector
 
 AuthGuard is a lightweight backend service built with Flask, designed to detect and respond to suspicious login activity such as brute-force attacks and credential stuffing. It uses time-windowed tracking and IP-based analysis to identify abnormal behavior in authentication flows.
 
